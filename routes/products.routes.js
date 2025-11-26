@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const productController = require('../controllers/products.controller');
-const { authBearer } = require('../middlewares/auth.middleware');
+const authBearer = require('../middlewares/auth.middleware');
 
 // Endpoint publik
 router.get('/', productController.getAllProducts);
